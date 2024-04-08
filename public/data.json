@@ -3,153 +3,117 @@
     "estate_title": "Cozy Family Retreat",
     "segment_name": "Single-family Home",
     "id": "001",
-    "description": "Charming single-family home with 4 bedrooms, 3 bathrooms, and a spacious backyard. Perfect for a growing family seeking tranquility.",
+    "description": "Nestled in the heart of a tranquil suburbia, this charming single-family home offers the perfect retreat for a growing family. Boasting 4 spacious bedrooms, 3 beautifully appointed bathrooms, and a sprawling backyard, it presents an idyllic blend of comfort and serenity. The open-concept living space welcomes you with warmth and coziness, ideal for creating lasting memories with loved ones. Enjoy gatherings in the generously-sized living room or step outside to the lush backyard oasis, where children can play freely and adults can unwind amidst nature's embrace. Conveniently located at 456 Oak Lane, this home provides easy access to schools, parks, and essential amenities, making it an irresistible haven for those seeking a peaceful suburban lifestyle.",
     "price": "$550,000",
     "status": "Sale",
     "area": "2,500 sq ft",
     "location": "456 Oak Lane, Suburbia, USA",
-    "facilities": [
-      "living room",
-      "backyard",
-      "attached garage"
-    ],
-    "image_url": "https://example.com/single_family_home_image.jpg",
+    "facilities": ["living room", "backyard", "attached garage"],
+    "image_url": "https://images.trvl-media.com/lodging/67000000/66090000/66087600/66087592/cdd60837.jpg?impolicy=resizecrop&rw=432&ra=fit",
     "button_text": "View Property"
   },
   {
     "estate_title": "Downtown Luxury Apartment",
     "segment_name": "Apartment",
     "id": "002",
-    "description": "Luxurious apartment with 2 bedrooms, 2 bathrooms, and stunning city views. Located in a vibrant downtown area with access to amenities.",
+    "description": "Experience the epitome of urban luxury in this exquisite downtown apartment. Perched high above the bustling city streets, this sophisticated residence offers breathtaking views and unparalleled elegance. With 2 spacious bedrooms, 2 luxurious bathrooms, and a sleek, modern design, every inch of this apartment exudes opulence and refinement. The expansive windows flood the space with natural light, creating a sense of airiness and grandeur. Indulge in the convenience of on-site amenities such as a fully-equipped gym and enjoy the vibrant energy of downtown living. Located at 101 Main Street, this apartment provides easy access to world-class dining, entertainment, and cultural attractions, offering a lifestyle of luxury and convenience.",
     "price": "$3,000/night",
     "status": "Rent",
     "area": "1,200 sq ft",
     "location": "101 Main Street, City Center, USA",
-    "facilities": [
-      "city views",
-      "on-site gym",
-      "modern appliances"
-    ],
-    "image_url": "https://example.com/apartment_image.jpg",
+    "facilities": ["city views", "on-site gym", "modern appliances"],
+    "image_url": "https://images1.apartments.com/i2/rLPXcu7yyYNyFvPMB5qoF73v4tBIaYatw-mJgzaXIc4/117/image.jpg",
     "button_text": "View Property"
   },
   {
     "estate_title": "Retirement Oasis",
     "segment_name": "Senior Living Community",
     "id": "003",
-    "description": "Comfortable studio apartment in a serene senior living community. Access to healthcare services, organized activities, and communal dining.",
+    "description": "Welcome to your serene retirement oasis, where every day is a new adventure in comfort and relaxation. This peaceful senior living community offers a comfortable studio apartment, thoughtfully designed to meet your needs and preferences. Enjoy access to a range of healthcare services, from routine check-ups to specialized care, ensuring your well-being is always a priority. Engage in a variety of organized activities tailored to your interests, from fitness classes to arts and crafts, fostering connections and friendships with fellow residents. Delight in delicious meals served in the communal dining area, where every bite is savored amidst lively conversations and laughter. Located at 222 Maple Drive, Retirement Village, this community provides the perfect backdrop for your golden years, filled with joy, tranquility, and the freedom to embrace each moment.",
     "price": "$4,500/month",
     "status": "Rent",
     "area": "600 sq ft",
     "location": "222 Maple Drive, Retirement Village, USA",
-    "facilities": [
-      "access to healthcare",
-      "organized activities",
-      "communal dining"
-    ],
-    "image_url": "https://example.com/senior_living_image.jpg",
+    "facilities": ["access to healthcare", "organized activities", "communal dining"],
+    "image_url": "https://images.trvl-media.com/lodging/23000000/22500000/22493000/22492930/1b633660.jpg?impolicy=resizecrop&rw=500&ra=fit",
     "button_text": "View Property"
   },
   {
     "estate_title": "Urban Townhouse Living",
     "segment_name": "Townhouse",
     "id": "004",
-    "description": "Modern townhouse with 3 bedrooms, 2.5 bathrooms, and a rooftop terrace offering panoramic city views. Ideal for urban dwellers.",
+    "description": "Experience the pinnacle of urban living in this modern townhouse, perfectly situated in the heart of the bustling metropolis. This impeccably designed residence features 3 spacious bedrooms, 2.5 luxurious bathrooms, and a rooftop terrace offering sweeping panoramic views of the city skyline. Entertain guests in style in the chic and contemporary living spaces, where every detail is curated for comfort and sophistication. Escape to the rooftop terrace, your private sanctuary amidst the urban landscape, where you can unwind and marvel at the breathtaking vistas. Dive into the community pool for a refreshing dip or whip up culinary delights in the state-of-the-art kitchen. Located at 789 Elm Street, Metropolitan City, this townhouse offers the ultimate urban lifestyle, where convenience, luxury, and excitement converge.",
     "price": "$700,000",
     "status": "Sale",
     "area": "1,800 sq ft",
     "location": "789 Elm Street, Metropolitan City, USA",
-    "facilities": [
-      "rooftop terrace",
-      "community pool",
-      "modern kitchen"
-    ],
-    "image_url": "https://example.com/townhouse_image.jpg",
+    "facilities": ["rooftop terrace", "community pool", "modern kitchen"],
+    "image_url": "https://i.pinimg.com/736x/49/6d/b0/496db01684f6b99113c87b1d29bb4baa.jpg",
     "button_text": "View Property"
   },
   {
     "estate_title": "Campus Haven",
     "segment_name": "Student Housing",
     "id": "005",
-    "description": "Convenient student housing with 3 bedrooms, 2 bathrooms, and furnished common areas. Walking distance to campus and local amenities.",
+    "description": "Welcome to Campus Haven, where convenience meets comfort in the heart of the college town. This modern student housing offers a vibrant community atmosphere and a convenient location within walking distance to campus. With 3 spacious bedrooms, 2 well-appointed bathrooms, and furnished common areas, this residence provides a perfect balance of privacy and sociability. Study in peace in the dedicated study rooms or relax and unwind in the furnished common areas, where you can bond with roommates and friends. Explore the vibrant college town scene, with dining options, recreational facilities, and cultural attractions just steps away. Located at 123 University Avenue, this student housing promises a fulfilling and enriching college experience.",
     "price": "$2,500/month",
     "status": "Rent",
     "area": "1,500 sq ft",
     "location": "123 University Avenue, College Town, USA",
-    "facilities": [
-      "furnished common areas",
-      "study rooms",
-      "close to campus"
-    ],
-    "image_url": "https://example.com/student_housing_image.jpg",
+    "facilities": ["furnished common areas", "study rooms", "close to campus"],
+    "image_url": "https://sc.edu/about/offices_and_divisions/division_of_information_technology/images/grid_images/service.desk.png",
     "button_text": "View Property"
   },
   {
     "estate_title": "Beachfront Escape",
     "segment_name": "Vacation Rental",
     "id": "006",
-    "description": "Relaxing beachfront vacation rental with 3 bedrooms, 2 bathrooms, and private beach access. Perfect for a family getaway or romantic retreat.",
+    "description": "Escape to paradise in this luxurious beachfront vacation rental, where the sun, sand, and surf await. This exquisite property offers 3 inviting bedrooms, 2 beautifully appointed bathrooms, and private beach access for the ultimate coastal retreat. Awaken to breathtaking ocean views from your bedroom window and spend leisurely days lounging on the pristine sandy beach just steps from your door. Fire up the outdoor grill for a beachside barbecue or simply bask in the warm sunshine on your private deck. Located at 333 Beachfront Avenue, Coastal Town, this vacation rental promises a rejuvenating getaway filled with relaxation, adventure, and unforgettable memories.",
     "price": "$300/night",
     "status": "Rent",
     "area": "1,800 sq ft",
     "location": "333 Beachfront Avenue, Coastal Town, USA",
-    "facilities": [
-      "ocean views",
-      "private beach access",
-      "outdoor grill"
-    ],
-    "image_url": "https://example.com/vacation_rental_image.jpg",
+    "facilities": ["ocean views", "private beach access", "outdoor grill"],
+    "image_url": "https://i.pinimg.com/originals/dc/0b/df/dc0bdf7a735d7a7e82a28ab0b5c59860.jpg",
     "button_text": "View Property"
   },
   {
     "estate_title": "Luxury Downtown Penthouse",
     "segment_name": "Apartment",
     "id": "007",
-    "description": "Exquisite penthouse apartment located in the heart of downtown. Boasting 3 bedrooms, 3 bathrooms, and floor-to-ceiling windows offering breathtaking city skyline views.",
+    "description": "Welcome to the pinnacle of urban luxury living in this exquisite downtown penthouse apartment. Boasting 3 spacious bedrooms, 3 luxurious bathrooms, and floor-to-ceiling windows offering breathtaking panoramic views of the city skyline, this residence exudes opulence and sophistication. Step onto your private balcony and soak in the vibrant energy of the bustling city below or retreat to the comfort of your elegantly designed living spaces. Prepare gourmet meals in the state-of-the-art kitchen featuring high-end appliances or entertain guests in the grandeur of the expansive living and dining areas. Located at 555 High Street, Urban Center, this penthouse offers an unparalleled lifestyle of luxury, convenience, and sophistication.",
     "price": "$5,500",
     "status": "Rent",
     "area": "2,000 sq ft",
     "location": "555 High Street, Urban Center, USA",
-    "facilities": [
-      "panoramic city views",
-      "private balcony",
-      "state-of-the-art appliances"
-    ],
-    "image_url": "https://example.com/luxury_apartment_image.jpg",
+    "facilities": ["panoramic city views", "private balcony", "state-of-the-art appliances"],
+    "image_url": "https://assets.savills.com/properties/GBBSRSBRS230123/BRS230123_03_l_lis.jpg",
     "button_text": "View Property"
   },
   {
     "estate_title": "Seaside Serenity Villa",
     "segment_name": "Vacation Rental",
     "id": "008",
-    "description": "Experience ultimate relaxation at this seaside villa with 4 bedrooms, 3 bathrooms, and direct access to a pristine sandy beach. Perfect for a rejuvenating family vacation or a romantic getaway.",
+    "description": "Experience ultimate relaxation in this luxurious seaside villa, where tranquility meets luxury on the shores of Coastal Paradise. With 4 spacious bedrooms, 3 beautifully appointed bathrooms, and direct access to a pristine sandy beach, this villa offers a haven of serenity and rejuvenation. Bask in the beauty of the ocean from your private outdoor terrace or take a leisurely stroll along the shoreline at sunset. Host al fresco dinners in the outdoor dining area or unwind with a glass of wine by the firepit under the stars. Located at 777 Oceanfront Drive, this villa promises an unforgettable escape filled with sun, surf, and seaside serenity.",
     "price": "$400/night",
     "status": "Rent",
     "area": "2,500 sq ft",
     "location": "777 Oceanfront Drive, Coastal Paradise, USA",
-    "facilities": [
-      "oceanfront views",
-      "private beach access",
-      "outdoor dining area"
-    ],
-    "image_url": "https://example.com/beachfront_villa_image.jpg",
+    "facilities": ["oceanfront views", "private beach access", "outdoor dining area"],
+    "image_url": "https://www.pt-realty.net/wp-content/uploads/sites/1730/2023/11/fonstola.ru_134831-1-1080x675.jpg",
     "button_text": "View Property"
   },
   {
     "estate_title": "College Park Apartments",
     "segment_name": "Student Housing",
     "id": "009",
-    "description": "Modern student apartments with 2 bedrooms, 1 bathroom, and fully furnished living spaces. Conveniently located near campus, dining options, and recreational facilities.",
+    "description": "Discover the perfect blend of comfort and convenience in College Park Apartments, designed to enhance your college experience. With 2 cozy bedrooms, 1 well-appointed bathroom, and fully furnished living spaces, this modern student housing offers a welcoming environment for students. Focus on your studies in the dedicated study area or unwind in the comfort of your furnished living room after a long day of classes. Enjoy the convenience of on-site laundry facilities and the proximity to campus, dining options, and recreational facilities. Located at 456 University Avenue, this apartment complex provides everything you need for a fulfilling and enriching college life.",
     "price": "$1,200",
     "status": "Rent",
     "area": "800 sq ft",
     "location": "456 University Avenue, College Town, USA",
-    "facilities": [
-      "furnished living spaces",
-      "study area",
-      "on-site laundry"
-    ],
-    "image_url": "https://example.com/student_apartments_image.jpg",
+    "facilities": ["furnished living spaces", "study area", "on-site laundry"],
+    "image_url": "https://images.rentable.co/5166/34169901/large.jpg",
     "button_text": "View Property"
   }
 ]

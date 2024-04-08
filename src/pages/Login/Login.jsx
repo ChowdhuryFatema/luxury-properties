@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import Navbar from "../shared/Navbar/Navbar";
 
 
 const Login = () => {
     return (
+
         <div className="max-w-7xl mx-auto px-5">
-        <div className="flex login flex-col justify-center items-center my-5 lg:my-0 rounded-lg">
+        <Navbar></Navbar>
+        <div className="flex login flex-col justify-center items-center my-5 lg:my-0 rounded-lg lg:mb-10">
             <div className="form md:my-10 w-full max-w-lg p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800 text-white">
                <div className="z-50">
                <h2 className="mb-3 text-2xl md:text-3xl font-semibold text-center">Login to your account</h2>
@@ -39,10 +42,6 @@ const Login = () => {
                             placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600 bg-transparent" />
                         </div>
                         <div className="space-y-2">
-                            <div className="flex justify-between">
-                                <label className="text-sm">Password</label>
-                                <a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-gray-600">Forgot password?</a>
-                            </div>
                             <input type="password" name="password" id="password" placeholder="******" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50  bg-transparent dark:text-gray-800 focus:dark:border-violet-600" />
                         </div>
                     </div>

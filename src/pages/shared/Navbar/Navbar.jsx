@@ -1,17 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
-const Navbar = () => {
+const Navbar = ({color}) => {
 
     const navLinks = <>
-        <NavLink to='/' className='p-2 md:p-3 text-lg font-semibold'>Home</NavLink>
-        <NavLink className='p-2 md:p-3 text-lg font-semibold'>Home</NavLink>
-        <NavLink className='p-2 md:p-3 text-lg font-semibold'>Home</NavLink>
+        <NavLink to='/' className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
+        <NavLink className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
+        <NavLink className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
     </>
 
     return (
-        <div className="max-w-7xl mx-auto px-5">
-            <div className="navbar bg-base-100">
+        <div className="max-w-7xl mx-auto px-5 relative z-50">
+            <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="text-xl">daisyUI</a>
+                    <a className={`text-xl ${color}`}>daisyUI</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to="/login" className="btn">Login</Link>
                 </div>
             </div>
         </div>

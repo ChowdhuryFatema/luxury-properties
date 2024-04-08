@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { useState } from "react";
+// import { useState } from "react";
 import ResidentialCard from "../ResidentialCard/ResidentialCard";
 
 
 const Residential = ({data}) => {
 
-    const [showAll, setShowAll] = useState(false);
+    // const [showAll, setShowAll] = useState(false);
     console.log(data)
     return (
         <div className="bg-[#EDF1F2]">
@@ -17,19 +17,20 @@ const Residential = ({data}) => {
                     </div>
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
 
+                    {/* .slice(0, showAll ? data.length : 6)  */}
                     {
-                        data.slice(0, showAll ? data.length : 6).map(item => <ResidentialCard 
+                        data.map(item => <ResidentialCard 
                             key={item.id}
                             item={item}></ResidentialCard>)
                     }
                         
                     </div>
                 </div>
-                {
+                {/* {
                     showAll 
                     ? '' : <button onClick={() => setShowAll(!showAll)} className="btn btn-primary">ShowAll</button>
                     
-                }
+                } */}
             </div>
         </div>
     );
