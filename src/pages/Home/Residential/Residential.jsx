@@ -1,11 +1,23 @@
 import PropTypes from 'prop-types';
 // import { useState } from "react";
 import ResidentialCard from "../ResidentialCard/ResidentialCard";
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+// import 'styles.css';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
-const Residential = ({data}) => {
+const Residential = ({ data }) => {
 
-    // const [showAll, setShowAll] = useState(false);
     console.log(data)
     return (
         <div className="bg-[#EDF1F2]">
@@ -15,22 +27,54 @@ const Residential = ({data}) => {
                         <h2 className="text-3xl font-bold">Partem reprimique an pro</h2>
                         <p className="font-serif text-sm dark:text-gray-600">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
                     </div>
-                    <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div>
 
-                    {/* .slice(0, showAll ? data.length : 6)  */}
-                    {
-                        data.map(item => <ResidentialCard 
-                            key={item.id}
-                            item={item}></ResidentialCard>)
-                    }
-                        
+                        <Swiper
+                             effect={'coverflow'}
+                             grabCursor={true}
+                             centeredSlides={true}
+                             slidesPerView={4}
+                             coverflowEffect={{
+                               rotate: 20,
+                               stretch: 0,
+                               depth: 100,
+                               modifier: 1,
+                               slideShadows: true,
+                             }}
+                             breakpoints={{
+                                '@0.00': {
+                                  slidesPerView: 1,
+                                },
+                                '@0.75': {
+                                  slidesPerView: 1,
+                                },
+                                '@1.00': {
+                                  slidesPerView: 1,
+                                },
+                                '@1.50': {
+                                  slidesPerView: 4,
+                                },
+                              }}
+                              pagination={{
+                                clickable: true,
+                              }}
+                            modules={[EffectCoverflow, Pagination]}
+                            className="mySwiper"
+
+
+                        >
+                            {
+                                data.map(item => <SwiperSlide key={item.id} >
+                                    <ResidentialCard
+
+                                        item={item}></ResidentialCard>
+                                </SwiperSlide>)
+                            }
+                        </Swiper>
+
                     </div>
                 </div>
-                {/* {
-                    showAll 
-                    ? '' : <button onClick={() => setShowAll(!showAll)} className="btn btn-primary">ShowAll</button>
-                    
-                } */}
+                
             </div>
         </div>
     );
