@@ -30,17 +30,19 @@ const ResidentialCard = ({ item }) => {
 
                 <div className='space-y-3'>
                     <h3 className="flex-1 leading-snug text-2xl">{estate_title}</h3>
-                    <p className='text-[#949494]'>{segment_name}, {area}</p>
-                    <p>
-                        <span className='text-red-500 text-3xl'>{price.split('/')[0]}</span>
-                        {price.split('/')[1] && ' /'}
-                        <span className='text-[#949494]'>{price.split('/')[1]}</span>
-                    </p>
+                    
+                    
                     <p>{description.slice(0, seeMore ? description.length : 60)} 
                         {
                             seeMore ? '' :
                             <button className='ml-1 hover:underline text-blue-800 font-semibold' onClick={() => setSeeMore(!seeMore)}> ...See More</button>
                         }
+                    </p>
+                    <p className='text-[#949494]'>{segment_name}, {area}</p>
+                    <p>
+                        <span className='text-red-500 text-3xl'>{price.split('/')[0]}</span>
+                        {price.split('/')[1] && ' /'}
+                        <span className='text-[#949494]'>{price.split('/')[1]}</span>
                     </p>
                     <ul className='ml-5'>
                         {facilities.map((facility, idx) => <li className='list-decimal text-[#949494]' key={idx}>{facility}</li>)}

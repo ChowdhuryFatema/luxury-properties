@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.login, .register {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login {
+    background-image: url('/src/assets/login.png');
+    
+}
+.register {
+    background-image: url('/src/assets/register.jpg');
+}
+.form {
+    background: linear-gradient(#000000a2, #000000c0);
+}
