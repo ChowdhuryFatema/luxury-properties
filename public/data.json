@@ -1,0 +1,155 @@
+[
+  {
+    "estate_title": "Cozy Family Retreat",
+    "segment_name": "Single-family Home",
+    "id": "001",
+    "description": "Charming single-family home with 4 bedrooms, 3 bathrooms, and a spacious backyard. Perfect for a growing family seeking tranquility.",
+    "price": "$550,000",
+    "status": "Sale",
+    "area": "2,500 sq ft",
+    "location": "456 Oak Lane, Suburbia, USA",
+    "facilities": [
+      "living room",
+      "backyard",
+      "attached garage"
+    ],
+    "image_url": "https://example.com/single_family_home_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Downtown Luxury Apartment",
+    "segment_name": "Apartment",
+    "id": "002",
+    "description": "Luxurious apartment with 2 bedrooms, 2 bathrooms, and stunning city views. Located in a vibrant downtown area with access to amenities.",
+    "price": "$3,000/night",
+    "status": "Rent",
+    "area": "1,200 sq ft",
+    "location": "101 Main Street, City Center, USA",
+    "facilities": [
+      "city views",
+      "on-site gym",
+      "modern appliances"
+    ],
+    "image_url": "https://example.com/apartment_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Retirement Oasis",
+    "segment_name": "Senior Living Community",
+    "id": "003",
+    "description": "Comfortable studio apartment in a serene senior living community. Access to healthcare services, organized activities, and communal dining.",
+    "price": "$4,500/month",
+    "status": "Rent",
+    "area": "600 sq ft",
+    "location": "222 Maple Drive, Retirement Village, USA",
+    "facilities": [
+      "access to healthcare",
+      "organized activities",
+      "communal dining"
+    ],
+    "image_url": "https://example.com/senior_living_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Urban Townhouse Living",
+    "segment_name": "Townhouse",
+    "id": "004",
+    "description": "Modern townhouse with 3 bedrooms, 2.5 bathrooms, and a rooftop terrace offering panoramic city views. Ideal for urban dwellers.",
+    "price": "$700,000",
+    "status": "Sale",
+    "area": "1,800 sq ft",
+    "location": "789 Elm Street, Metropolitan City, USA",
+    "facilities": [
+      "rooftop terrace",
+      "community pool",
+      "modern kitchen"
+    ],
+    "image_url": "https://example.com/townhouse_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Campus Haven",
+    "segment_name": "Student Housing",
+    "id": "005",
+    "description": "Convenient student housing with 3 bedrooms, 2 bathrooms, and furnished common areas. Walking distance to campus and local amenities.",
+    "price": "$2,500/month",
+    "status": "Rent",
+    "area": "1,500 sq ft",
+    "location": "123 University Avenue, College Town, USA",
+    "facilities": [
+      "furnished common areas",
+      "study rooms",
+      "close to campus"
+    ],
+    "image_url": "https://example.com/student_housing_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Beachfront Escape",
+    "segment_name": "Vacation Rental",
+    "id": "006",
+    "description": "Relaxing beachfront vacation rental with 3 bedrooms, 2 bathrooms, and private beach access. Perfect for a family getaway or romantic retreat.",
+    "price": "$300/night",
+    "status": "Rent",
+    "area": "1,800 sq ft",
+    "location": "333 Beachfront Avenue, Coastal Town, USA",
+    "facilities": [
+      "ocean views",
+      "private beach access",
+      "outdoor grill"
+    ],
+    "image_url": "https://example.com/vacation_rental_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Luxury Downtown Penthouse",
+    "segment_name": "Apartment",
+    "id": "007",
+    "description": "Exquisite penthouse apartment located in the heart of downtown. Boasting 3 bedrooms, 3 bathrooms, and floor-to-ceiling windows offering breathtaking city skyline views.",
+    "price": "$5,500",
+    "status": "Rent",
+    "area": "2,000 sq ft",
+    "location": "555 High Street, Urban Center, USA",
+    "facilities": [
+      "panoramic city views",
+      "private balcony",
+      "state-of-the-art appliances"
+    ],
+    "image_url": "https://example.com/luxury_apartment_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "Seaside Serenity Villa",
+    "segment_name": "Vacation Rental",
+    "id": "008",
+    "description": "Experience ultimate relaxation at this seaside villa with 4 bedrooms, 3 bathrooms, and direct access to a pristine sandy beach. Perfect for a rejuvenating family vacation or a romantic getaway.",
+    "price": "$400/night",
+    "status": "Rent",
+    "area": "2,500 sq ft",
+    "location": "777 Oceanfront Drive, Coastal Paradise, USA",
+    "facilities": [
+      "oceanfront views",
+      "private beach access",
+      "outdoor dining area"
+    ],
+    "image_url": "https://example.com/beachfront_villa_image.jpg",
+    "button_text": "View Property"
+  },
+  {
+    "estate_title": "College Park Apartments",
+    "segment_name": "Student Housing",
+    "id": "009",
+    "description": "Modern student apartments with 2 bedrooms, 1 bathroom, and fully furnished living spaces. Conveniently located near campus, dining options, and recreational facilities.",
+    "price": "$1,200",
+    "status": "Rent",
+    "area": "800 sq ft",
+    "location": "456 University Avenue, College Town, USA",
+    "facilities": [
+      "furnished living spaces",
+      "study area",
+      "on-site laundry"
+    ],
+    "image_url": "https://example.com/student_apartments_image.jpg",
+    "button_text": "View Property"
+  }
+]
