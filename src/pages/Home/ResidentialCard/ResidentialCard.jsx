@@ -15,7 +15,7 @@ const ResidentialCard = ({ item }) => {
     } = item;
 
     return (
-        <div className="md:w-96 flex flex-col bg-white shadow-lg dark:bg-gray-50">
+        <div className="flex flex-col bg-white shadow-lg dark:bg-gray-50">
             <div className='relative'>
                 <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image_url} />
                 <button className='py-1 px-3 font-semibold text-white rounded-md bg-[#6BC702] absolute top-5 left-5'>{status}</button>
@@ -42,7 +42,7 @@ const ResidentialCard = ({ item }) => {
                         <span>Area : {area}</span>
                     </div>
                     <div className='pt-3'>
-                        <Link to={`/residential/${id}`} className='btn rounded-none bg-[#6BC702] text-lg font-semibold text-white hover:bg-[#6cb617]'>{button_text}</Link>
+                        <Link to={`/residential/${id}`} className='btn rounded-none bg-[#6BC702] text-lg font-semibold text-white hover:bg-[#62a812]'>{button_text}</Link>
                     </div>
                 </div>
 

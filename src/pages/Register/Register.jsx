@@ -1,26 +1,92 @@
 import { Link } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from 'react-toastify';
+import { useForm } from "react-hook-form"
+import { LuEye, LuEyeOff } from "react-icons/lu";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
+
+    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false)
+    
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+
+    const onSubmit = (data) => {
+        console.log(data)
+        const { email, password, name, image } = data;
+
+        if (password.length < 6) {
+            return toast.error("Your password must be at least 6 characters")
+        }
+        else if (!/[a-z]/.test(password)) {
+            return toast.error('Your password should contain at least one lower case')
+        }
+        else if (!/[A-Z]/.test(password)) {
+            return toast.error('Your password should contain at least one upper case')
+        }
+
+        createUser(email, password)
+            .then(result => { 
+                toast.success('User Create Successfully');
+                console.log(result)
+
+                updateUserProfile(name, image)
+                .then(() => {
+                console.log('Profile updated!')
+
+                  }).catch((error) => {
+                    console.log(error)
+                  });
+
+            })
+            .catch(error => toast.error(error.message))
+
+
+    }
+
+   
+
+
+
+
     return (
-        <div className="max-w-7xl mx-auto px-5">
-            <Navbar></Navbar>
-            <div className="register rounded-lg flex flex-col justify-center items-center mt-5 lg:mt-0 mb-10">
-                <div className="form lg:my-10 text-white flex flex-col w-full max-w-lg p-6 shadow rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800 border">
+        <div>
+             <Helmet>
+                <title>Sign Up | Luxury Properties</title>
+            </Helmet> 
+            <div className="text-white z-50">
+                <div className="overlay2"></div>
+                <Navbar></Navbar>
+            </div>
+            <div className="register rounded-lg flex flex-col justify-center items-center -mt-20 pt-40 pb-20">
+                <div className="form text-white flex flex-col w-full max-w-lg p-6 shadow rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
                     <div className="mb-4 md:mb-8 text-center">
                         <h1 className="my-3 text-2xl md:text-4xl font-bold">Sign Up</h1>
                         <p className="text-sm dark:text-gray-600">Nice to meet you! Enter your details to register.</p>
                     </div>
-                    <form className="space-y-8">
+                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
                         <div className="space-y-4">
                             <div>
                                 <label className="block mb-2 text-sm">Name </label>
-                                <input type="text" name="name" placeholder="Name" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent" required />
+                                <input type="text" name="name" placeholder="Name" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent"
+                                    {...register("name", { required: true })} />
+                                {errors.name && <span className="text-red-400 ">This field is required</span>}
                             </div>
                             <div>
                                 <label className="block mb-2 text-sm">Email address</label>
-                                <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent" required />
+                                <input type="email" name="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent"
+                                    {...register("email", { required: true })} />
+                                {errors.email && <span className="text-red-400">This field is required</span>}
                             </div>
 
                             <div>
@@ -28,18 +94,25 @@ const Register = () => {
                                     <label className="text-sm">Photo URL</label>
 
                                 </div>
-                                <input type="text" name="confirmPassword" placeholder="photo URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent" required />
-
+                                <input type="text" name="image" placeholder="photo URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent"
+                                    {...register("image", { required: true })} />
+                                {errors.image && <span className="text-red-400">This field is required</span>}
                             </div>
 
-
-                            <div>
+                            <div className="relative">
                                 <div className="flex justify-between mb-2">
                                     <label className="text-sm">Password</label>
 
                                 </div>
-                                <input type="password" name="password" placeholder="******" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent" required />
+                                <input type={showPassword ? 'text' : 'password'} name="password" placeholder="******" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 bg-transparent" {...register("password", { required: true })} />
+                                {errors.password && <span className="text-red-400">This field is required</span>}
+                                <p
+                                    onClick={() => setShowPassword(!showPassword)} className="absolute right-5 top-[38px]">
 
+                                    {showPassword ?
+                                        <LuEye size={20} /> :
+                                        <LuEyeOff size={20} />}
+                                </p>
                             </div>
 
 

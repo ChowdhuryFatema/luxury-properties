@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { LuChevronRightCircle } from "react-icons/lu";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,25 +40,55 @@ const Banner = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='slide slide1'>
-                      <div className='max-w-7xl mx-auto min-h-[90vh] px-5'>
-                        slide 1
-                      </div>
+                    <div className='flex flex-col items-center border-2 slide slide1 min-h-[95vh] justify-center'>
+
+                        <div className='overlay'></div>
+                        <div className='space-y-3 slid-content text-center rounded-lg text-white z-40'>
+                            <h2 className='text-5xl font-semibold opacity-100'>Awesome Family Retreat </h2>
+                            <p className='text-xl opacity-75'>Single-family Home, 2,500 sq ft</p>
+                            <p className='text-4xl py-2'>$550,000</p>
+                            <button className='font-semibold bg-[#23BE0A] hover:bg-[#62a812] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
+                        </div>
+
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='slide slide2 min-h-[90vh]'>
-                        
+                    <div className='flex flex-col items-center border-2 slide slide2 min-h-[95vh] justify-center'>
+
+                        <div className='overlay'></div>
+                        <div className='space-y-3 slid-content text-center rounded-lg text-white z-40'>
+                            <h2 className='text-5xl font-semibold opacity-100'>Downtown Luxury Apartment </h2>
+                            <p className='text-xl'>101 Main Street, City Center, USA</p>
+                            <p className='text-4xl py-2'>$3,000</p>
+                            <button className='font-semibold bg-[#23BE0A] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
+                        </div>
+
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex items-center slide slide3 min-h-[90vh]'>
-                        Slide 333
+                    <div className='flex flex-col items-center border-2 slide slide3 min-h-[95vh] justify-center'>
+
+                        <div className='overlay'></div>
+                        <div className='space-y-3 slid-content text-center rounded-lg text-white z-40'>
+                            <h2 className='text-5xl font-semibold opacity-100'>Urban Townhouse Living</h2>
+                            <p className='text-xl'>789 Elm Street, Metropolitan City, USA</p>
+                            <p className='text-4xl py-2'>$700,000</p>
+                            <button className='font-semibold bg-[#23BE0A] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
+                        </div>
+
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex items-center slide slide4 min-h-[90vh]'>
-                        Slide 444
+                    <div className='flex flex-col items-center border-2 slide slide4 min-h-[95vh] justify-center'>
+
+                        <div className='overlay'></div>
+                        <div className='space-y-3 slid-content text-center rounded-lg text-white z-40'>
+                            <h2 className='text-5xl font-semibold opacity-100'>Luxury Downtown Penthouse</h2>
+                            <p className='text-xl'>555 High Street, Urban Center, USA</p>
+                            <p className='text-4xl py-2'>$5,500</p>
+                            <button className='font-semibold bg-[#23BE0A] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
+                        </div>
+
                     </div>
                 </SwiperSlide>
                 <div className="autoplay-progress" slot="container-end">

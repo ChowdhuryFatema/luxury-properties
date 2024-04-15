@@ -5,6 +5,9 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ResidentialDetails from "../pages/ResidentialDetails/ResidentialDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import ProtectedRoute from "./ProtectedRoute";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +22,9 @@ const router = createBrowserRouter([
         },
         {
           path: '/residential/:id',
-          element: <ResidentialDetails></ResidentialDetails>,
+          element: <ProtectedRoute>
+            <ResidentialDetails></ResidentialDetails>
+          </ProtectedRoute>,
           loader: () => fetch('/data.json')
         },
         {
@@ -29,6 +34,18 @@ const router = createBrowserRouter([
         {
           path: '/register',
           element: <Register></Register>
+        },
+        {
+          path: '/update-profile',
+          element: <ProtectedRoute>
+            <UpdateProfile></UpdateProfile>
+          </ProtectedRoute>,
+        },
+        {
+          path: '/about-us',
+          element: <ProtectedRoute>
+            <AboutUs></AboutUs>
+            </ProtectedRoute>,
         },
       ],
     },

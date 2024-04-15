@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.active {
+  border-bottom: 2px solid #23BE0A;
+}
+
+.user-img:hover + .user-name {
+  display: block !important;
+  transition: .5s;
+}
 
 .login, .register {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 
 .login {
     background-image: url('/src/assets/login.png');
@@ -23,13 +36,13 @@
     background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/img-1.jpg');       
 }
 .slide2 {
-    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/register.jpg');          
+    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/banner-3.jpg');          
 }
 .slide3 {
-    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/login.png'); 
+    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/banner-5.jpg'); 
 }
 .slide4 {
-    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/register.jpg');
+    background-image: linear-gradient(#0000003f, #00000049), url('/src/assets/banner-4.jpg');
 }
 .slide {
     background-repeat: no-repeat;
@@ -44,17 +57,61 @@ html,
 body {
   position: relative;
   height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
+.overlay {
+  content: '';
+  background-color: black;
+  width: 55%;
+  height: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  border-radius: 10px;
+}
+
+.overlay2 {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+.overlay3 {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 4px;
+  transition: .5s;
+}
+.property:hover .overlay3 {
+  opacity: .6;
+  transition: .5s;
+}
+
+.property:hover .property-content {
+  opacity: 1;
+  transition: .5s;
+}
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -98,8 +155,6 @@ body {
   top: 38% !important;
 }
 
-
-
 .autoplay-progress {
   position: absolute;
   right: 16px;
@@ -129,3 +184,5 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+

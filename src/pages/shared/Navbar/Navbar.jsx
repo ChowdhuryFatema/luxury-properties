@@ -1,16 +1,24 @@
+import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import userImg from '../../../assets/user.png';
 
 
-const Navbar = ({color}) => {
+const Navbar = ({ color }) => {
+
+    const { user, logOut} = useContext(AuthContext);
+
 
     const navLinks = <>
-        <NavLink to='/' className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
-        <NavLink className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
-        <NavLink className={`p-2 md:p-3 text-lg font-semibold ${color}`}>Home</NavLink>
+        < NavLink to='/' className={`py-1 px-2 md:px-3 text-lg font-semibold ${color}`}>Home</NavLink>
+        <NavLink to='/update-profile' className={`py-1 px-2 md:px-3 text-lg font-semibold ${color}`}>Update Profile</NavLink>
+        <NavLink to='/about-us' className={`py-1 px-2 md:px-3 text-lg font-semibold ${color}`}>About Us</NavLink>
     </>
 
     return (
-        <div className="max-w-7xl mx-auto px-5 relative z-50">
+        <div className="max-w-7xl mx-auto px-5 relative top-0 left-0 z-50
+        ">
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -21,7 +29,7 @@ const Navbar = ({color}) => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className={`text-xl ${color}`}>daisyUI</a>
+                    <Link to='/' className={`text-lg md:text-2xl lg:text-3xl ${color} font-bold`}>Luxury Properties</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,11 +37,34 @@ const Navbar = ({color}) => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login" className="btn">Login</Link>
+                    {
+                        user
+                            ?
+                            <>
+                                <div className='tooltip tooltip-left'  data-tip={user?.displayName && user?.displayName}>
+                                    <div tabIndex={0} role="button" className="btn user-img btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img alt="Tailwind CSS Navbar component" src={user?.photoURL || userImg} />
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                                <button onClick={() => logOut()} className='font-semibold bg-[#23BE0A] hover:bg-[#62a812] btn text-white border-0 rounded-lg text-lg ml-3'>Log out</button>
+                            </>
+
+
+                            : <Link to="/login" className='font-semibold bg-[#23BE0A] hover:bg-[#62a812] btn text-white border-0 rounded-lg text-lg'>Login</Link>
+
+                           
+                    }
                 </div>
             </div>
         </div>
     );
 };
 
+Navbar.propTypes = {
+    color: PropTypes.string,
+}
 export default Navbar;

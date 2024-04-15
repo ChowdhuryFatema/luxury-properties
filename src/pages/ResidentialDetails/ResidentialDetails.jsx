@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
+import { Helmet } from "react-helmet-async";
 
 const ResidentialDetails = () => {
 
@@ -22,6 +23,9 @@ const ResidentialDetails = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-5">
+             <Helmet>
+                <title>property Details | Luxury Properties</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
                 <div className="lg:col-span-3 dark:bg-gray-50 dark:text-gray-800">
@@ -37,6 +41,10 @@ const ResidentialDetails = () => {
 
 
                                 <div className='space-y-3'>
+                                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                                        <span>{location}</span>
+                                        <span>Area : {area}</span>
+                                    </div>
                                     <h3 className="flex-1 leading-snug text-2xl">{estate_title}</h3>
 
 
@@ -50,10 +58,7 @@ const ResidentialDetails = () => {
                                     <ul className='ml-5'>
                                         {facilities.map((facility, idx) => <li className='list-decimal text-[#949494]' key={idx}>{facility}</li>)}
                                     </ul>
-                                    <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                                        <span>{location}</span>
-                                        <span>Area : {area}</span>
-                                    </div>
+                                   
                                 </div>
 
 
