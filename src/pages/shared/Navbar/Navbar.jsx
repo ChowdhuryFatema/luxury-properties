@@ -11,9 +11,9 @@ const Navbar = ({ color, navColor }) => {
 
 
     const navLinks = <>
-        < NavLink to='/' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Home</NavLink>
-        <NavLink to='/update-profile' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Update Profile</NavLink>
-        <NavLink to='/contact-us' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Contact Us</NavLink>
+        < NavLink to='/' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold text-black ${navColor}`}>Home</NavLink>
+        <NavLink to='/update-profile' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold text-black ${navColor}`}>Update Profile</NavLink>
+        <NavLink to='/contact-us' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold text-black ${navColor}`}>Contact Us</NavLink>
     </>
 
     return (
@@ -34,7 +34,7 @@ const Navbar = ({ color, navColor }) => {
                             
                         </ul>
                     </div>
-                    <Link to='/' className={`text-2xl lg:text-3xl ${color} font-bold`}>Luxury Properties</Link>
+                    <Link to='/' className={`text-[20px] lg:text-3xl ${color} font-bold`}>Luxury Properties</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

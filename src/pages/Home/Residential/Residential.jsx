@@ -27,7 +27,7 @@ const Residential = ({ data }) => {
                         {
                             !showAll &&
                             <div className='my-10 flex flex-col justify-center items-center'>
-                            <button onClick={() => setShowAll(!showAll)} className='btn border border-[#6BC702] text-xl font-semibold px-10 rounded-lg hover:bg-[#62a812]'>ShowAll</button>
+                            <button onClick={() => setShowAll(!showAll)} className='btn border border-[#6BC702] text-xl font-semibold px-10 rounded-lg hover:bg-[#62a812]'>View More</button>
                             </div>
                         }
                     

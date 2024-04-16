@@ -1,6 +1,6 @@
 [
   {
-    "animation":"fade-right",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1200",
     "easing": "ease",
@@ -34,7 +34,7 @@
     "button_text": "View Property"
   },
   {
-    "animation":"fade-left",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1000",
     "easing": "ease",
@@ -51,7 +51,7 @@
     "button_text": "View Property"
   },
   {
-    "animation":"fade-right",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1000",
     "easing": "ease",
@@ -85,7 +85,7 @@
     "button_text": "View Property"
   },
   {
-    "animation":"fade-left",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1200",
     "easing": "ease",
@@ -102,7 +102,7 @@
     "button_text": "View Property"
   },
   {
-    "animation":"fade-right",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1200",
     "easing": "ease",
@@ -136,7 +136,7 @@
     "button_text": "View Property"
   },
   {
-    "animation":"fade-left",
+    "animation":"zoom-in",
     "delay": "300",
     "duration": "1200",
     "easing": "ease",

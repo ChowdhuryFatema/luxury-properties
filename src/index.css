@@ -131,10 +131,10 @@ body {
   transition: .5s;
 }
 
-.property:hover .property-content {
+/* .property:hover .property-content {
   opacity: 1;
   transition: .5s;
-}
+} */
 .swiper {
   width: 100%;
   padding-top: 50px;

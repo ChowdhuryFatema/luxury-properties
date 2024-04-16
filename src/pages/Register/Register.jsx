@@ -60,10 +60,6 @@ const Register = () => {
 
     }
 
-   
-
-
-
 
     return (
         <div>
@@ -72,9 +68,9 @@ const Register = () => {
             </Helmet> 
             <div className="text-white z-50">
                 <div className="overlay2"></div>
-                <Navbar></Navbar>
+                <Navbar color={'text-white'} navColor={'lg:text-white'}></Navbar>
             </div>
-            <div className="register rounded-lg flex flex-col justify-center items-center -mt-20 pt-40 pb-20">
+            <div className="register rounded-lg flex flex-col justify-center items-center -mt-20 pt-32 pb-10 md:pt-40 md:b-20 px-5">
                 <div className="form text-white flex flex-col w-full max-w-lg p-6 shadow rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
                     <div className="mb-4 md:mb-8 text-center">
                         <h1 className="my-3 text-2xl md:text-4xl font-bold">Sign Up</h1>

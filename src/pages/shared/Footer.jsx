@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="bg-[#282828]">
             <div className="py-10 space-y-4">
-                <h1 data-aos="zoom-in" data-aos-duration="600" className="text-3xl text-center text-white">Luxury <span className="text-[#5C963C]">Properties</span></h1>
+                <h1 data-aos="zoom-in" data-aos-duration="600" className="text-2xl md:text-3xl text-center text-white">Luxury <span className="text-[#5C963C]">Properties</span></h1>
                 <ul className="text-center">
                     <Link to='/' className="inline px-3 text-white border-r">Home</Link>
                     <Link to='/update-profile' className="inline px-3 text-white border-r">Update Profile</Link>

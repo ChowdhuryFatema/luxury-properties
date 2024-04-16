@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
 import { Helmet } from "react-helmet-async";
+import SideBar from "./SideBar";
 
 const ResidentialDetails = () => {
 
@@ -22,12 +23,12 @@ const ResidentialDetails = () => {
     } = item;
 
     return (
-        <div className="">
+        <div>
             <Helmet>
                 <title>property Details | Luxury Properties</title>
             </Helmet>
             <div className="shadow-lg bg-white w-full">
-                <div className="max-w-7xl mx-auto px-5">
+                <div className="max-w-7xl mx-auto">
                     <Navbar></Navbar>
                 </div>
             </div>
@@ -37,10 +38,10 @@ const ResidentialDetails = () => {
                     <div className="space-y-4">
                         <div className="flex flex-col bg-white shadow-lg dark:bg-gray-50">
                             <div className='relative'>
-                                <img alt="" className="object-cover w-full h-96 dark:bg-gray-500" src={image_url} />
+                                <img alt="" className="object-cover w-full md:h-96 dark:bg-gray-500" src={image_url} />
                                 <button className='py-2 px-4 font-semibold text-white rounded-md bg-[#6BC702] absolute top-5 left-5 text-lg'>{status}</button>
                             </div>
-                            <div className="flex flex-col flex-1 p-6">
+                            <div className="flex flex-col flex-1 p-4 md:p-6">
                                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
 
 
@@ -54,7 +55,7 @@ const ResidentialDetails = () => {
                                     <hr />
 
 
-                                    <div className="flex justify-between pt-3">
+                                    <div className="md:flex justify-between pt-3">
 
                                         <div className="space-y-2">
                                             <p>
@@ -71,7 +72,7 @@ const ResidentialDetails = () => {
                                         </div>
 
 
-                                        <ul className="space-y-1">
+                                        <ul className="space-y-1 mt-5 ml-5 md:mt-0 md:ml-0">
                                             {facilities.map((facility, idx) => <li className='list-decimal text-[#949494]' key={idx}>{facility}</li>)}
                                         </ul>
 
@@ -87,7 +88,7 @@ const ResidentialDetails = () => {
 
 
                 <div>
-                    <h2>sidebar</h2>
+                    <SideBar></SideBar>
                 </div>
             </div>
         </div>
