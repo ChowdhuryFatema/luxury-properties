@@ -40,22 +40,22 @@ const Banner = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='flex flex-col items-center border-2 slide slide1 min-h-[98vh] justify-center pt-20'>
-
-                        <div className='overlay mt-10'></div>
+                    <div className='flex flex-col items-center border-2 slide slide1 min-h-[98vh] justify-center md:pt-20'>
+  
+                        <div className='overlay md:mt-10'></div>
                         <div className='space-y-3 slid-content text-center rounded-lg text-white z-40 px-5'>
-                            <h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold opacity-100'>Awesome Family Retreat </h2>
-                            <p className='text-lg md:text-xl'>Single-family Home, 2,500 sq ft</p>
-                            <p className='text-3xl md:text-4xl py-2'>$550,000</p>
-                            <button className='font-semibold bg-[#23BE0A] hover:bg-[#62a812] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
+                            <h2 data-aos="zoom-in" data-aos-duration="500" className='text-3xl md:text-4xl lg:text-5xl font-semibold opacity-100'>Awesome Family Retreat </h2>
+                            <p data-aos="fade-right" data-aos-delay="600" className='text-lg md:text-xl'>Single-family Home, 2,500 sq ft</p>
+                            <p data-aos="fade-left" data-aos-delay="600" className='text-3xl md:text-4xl py-2'>$550,000</p>
+                            <button data-aos="zoom-in" data-aos-delay="1000" className='font-semibold bg-[#23BE0A] hover:bg-[#62a812] btn text-white border-0 rounded-none'><LuChevronRightCircle size={20} />View Details</button>
                         </div>
 
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex flex-col items-center border-2 slide slide2 min-h-[98vh] justify-center pt-20'>
+                    <div className='flex flex-col items-center border-2 slide slide2 min-h-[98vh] justify-center md:pt-20'>
 
-                        <div className='overlay mt-10'></div>
+                        <div className='overlay md:mt-10'></div>
                         <div className='space-y-3 slid-content text-center rounded-lg text-white z-40 px-5'>
                             <h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold opacity-100'>Downtown Luxury Apartment </h2>
                             <p className='text-lg md:text-xl'>101 Main Street, City Center, USA</p>
@@ -66,9 +66,9 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex flex-col items-center border-2 slide slide3 min-h-[98vh] justify-center pt-20'>
+                    <div className='flex flex-col items-center border-2 slide slide3 min-h-[98vh] justify-center md:pt-20'>
 
-                        <div className='overlay mt-10'></div>
+                        <div className='overlay md:mt-10'></div>
                         <div className='space-y-3 slid-content text-center rounded-lg text-white z-40 px-5'>
                             <h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold opacity-100'>Urban Townhouse Living</h2>
                             <p className='text-lg md:text-xl'>789 Elm Street, Metropolitan City, USA</p>
@@ -79,9 +79,9 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex flex-col items-center border-2 slide slide4 min-h-[98vh] justify-center pt-20'>
+                    <div className='flex flex-col items-center border-2 slide slide4 min-h-[98vh] justify-center md:pt-20'>
 
-                        <div className='overlay mt-10'></div>
+                        <div className='overlay md:mt-10'></div>
                         <div className='space-y-3 slid-content text-center rounded-lg text-white z-40 px-5'>
                             < h2 className='text-3xl md:text-4xl lg:text-5xl font-semibold opacity-100'>Luxury Downtown Penthouse</h2>
                             <p className='text-lg md:text-xl'>555 High Street, Urban Center, USA</p>

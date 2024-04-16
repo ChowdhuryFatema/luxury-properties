@@ -7,12 +7,15 @@ const Contact = () => {
              <Helmet>
                 <title>Contact Us | Luxury Properties</title>
             </Helmet>
+            
             <div className="shadow-lg bg-white w-full">
                 <div className="max-w-7xl mx-auto px-5">
                     <Navbar></Navbar>
                 </div>
             </div>
-            <div className="grid max-w-7xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+
+
+            <div className="grid max-w-7xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 xl:px-32">
                 
                 <form noValidate="" className="order-2 md:order-1 space-y-6">
                     <div>

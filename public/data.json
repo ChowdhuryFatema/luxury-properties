@@ -1,5 +1,9 @@
 [
   {
+    "animation":"fade-right",
+    "delay": "300",
+    "duration": "1200",
+    "easing": "ease",
     "estate_title": "Cozy Family Retreat",
     "segment_name": "Single-family Home",
     "id": "001",
@@ -13,6 +17,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"zoom-in",
+    "delay": "0",
+    "duration": "900",
+    "easing": "ease-in",
     "estate_title": "Downtown Luxury Apartment",
     "segment_name": "Apartment",
     "id": "002",
@@ -26,6 +34,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"fade-left",
+    "delay": "300",
+    "duration": "1000",
+    "easing": "ease",
     "estate_title": "Retirement Oasis",
     "segment_name": "Senior Living Community",
     "id": "003",
@@ -39,6 +51,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"fade-right",
+    "delay": "300",
+    "duration": "1000",
+    "easing": "ease",
     "estate_title": "Urban Townhouse Living",
     "segment_name": "Townhouse",
     "id": "004",
@@ -52,6 +68,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"zoom-in",
+    "delay": "0",
+    "duration": "900",
+    "easing": "ease-in",
     "estate_title": "Campus Haven",
     "segment_name": "Student Housing",
     "id": "005",
@@ -65,6 +85,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"fade-left",
+    "delay": "300",
+    "duration": "1200",
+    "easing": "ease",
     "estate_title": "Beachfront Escape",
     "segment_name": "Vacation Rental",
     "id": "006",
@@ -78,6 +102,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"fade-right",
+    "delay": "300",
+    "duration": "1200",
+    "easing": "ease",
     "estate_title": "Luxury Downtown Penthouse",
     "segment_name": "Apartment",
     "id": "007",
@@ -91,6 +119,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"zoom-in",
+    "delay": "0",
+    "duration": "900",
+    "easing": "ease-in",
     "estate_title": "Seaside Serenity Villa",
     "segment_name": "Vacation Rental",
     "id": "008",
@@ -104,6 +136,10 @@
     "button_text": "View Property"
   },
   {
+    "animation":"fade-left",
+    "delay": "300",
+    "duration": "1200",
+    "easing": "ease",
     "estate_title": "College Park Apartments",
     "segment_name": "Student Housing",
     "id": "009",

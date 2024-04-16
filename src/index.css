@@ -5,6 +5,22 @@
 @tailwind utilities;
 
 
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 .active {
   border-bottom: 2px solid #23BE0A;
 }
@@ -52,21 +68,6 @@
 
 
 
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 .swiper {
   width: 100%;
@@ -227,11 +228,11 @@ body {
   }
   .swiper-button-prev {
     top: 90% !important;
-    left: 38% !important;
+    left: 35% !important;
   }
   .swiper-button-next {
     top: 90% !important;
-    left: 55% !important;
+    left: 50% !important;
   }
 }
 

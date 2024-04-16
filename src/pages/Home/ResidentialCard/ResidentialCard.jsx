@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const ResidentialCard = ({ item }) => {
+const ResidentialCard = ({ item,  }) => {
     const {
         id,
         area,
@@ -12,10 +12,15 @@ const ResidentialCard = ({ item }) => {
         button_text,
         segment_name,
         estate_title,
+        animation, 
+        delay, 
+        duration, 
+        easing
     } = item;
 
     return (
-        <div className="flex flex-col bg-white shadow-lg dark:bg-gray-50">
+        <div data-aos={animation} data-aos-delay={delay}  data-aos-duration={duration}
+        data-aos-easing={easing} className="flex flex-col bg-white shadow-lg dark:bg-gray-50">
             <div className='relative'>
                 <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={image_url} />
                 <button className='py-1 px-3 font-semibold text-white rounded-md bg-[#6BC702] absolute top-5 left-5'>{status}</button>

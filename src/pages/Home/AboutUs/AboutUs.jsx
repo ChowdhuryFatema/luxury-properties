@@ -17,6 +17,9 @@ const AboutUs = () => {
     return (
 
         <>
+
+
+
             <div className="max-w-7xl mx-auto my-8 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container flex flex-col items-center mx-auto  my-5 md:my-8">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-none text-center">What our customers are saying about us</h1>
@@ -33,30 +36,29 @@ const AboutUs = () => {
                             stretch: 0,
                             depth: 100,
                             modifier: 1,
-                            spaceBetween: 0,
                             slideShadows: false,
                         }}
-                        pagination={{ clickable: true }}
+                        pagination ={{ clickable: true }}
                         breakpoints={{
                             640: {
-                                slidesPerView: 2,
-                                spaceBetween: 0,
+                              slidesPerView: 2,
+                              spaceBetween: 0,
                             },
                             768: {
-                                slidesPerView: 2,
-                                spaceBetween: 0,
+                              slidesPerView: 2,
+                              spaceBetween: 0,
                             },
                             1024: {
-                                slidesPerView: 3,
-                                spaceBetween: 0,
+                              slidesPerView: 3,
+                              spaceBetween: 0,
                             },
-                        }}
+                          }}
                         modules={[EffectCoverflow, Pagination]}
                         className="mySwiper"
                     >
 
                         <SwiperSlide>
-                            <div className="flex flex-col border rounded-lg  mx-4 my-6 bg-white">
+                        <div className="flex flex-col border rounded-lg  mx-4 my-6 bg-white">
                                 <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -78,7 +80,7 @@ const AboutUs = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
+                        <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
                                 <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -102,7 +104,7 @@ const AboutUs = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            < div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
+                        < div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
                                 <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50 flex flex-col-reverse">
                                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800 flex-grow">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -124,7 +126,7 @@ const AboutUs = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
+                        <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
                                 <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -147,7 +149,7 @@ const AboutUs = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
+                        <div className="flex flex-col border rounded-lg mx-4 my-6 bg-white">
                                 <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                                     <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -168,7 +170,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         </SwiperSlide>
-
+                        
                     </Swiper>
 
                 </div>

@@ -24,8 +24,8 @@ const Home = () => {
                 <Banner></Banner>
             </div>
             <Residential data={data}></Residential>
-            <Property></Property>
             <AboutUs></AboutUs>
+            <Property></Property>
 
         </div>
     );
