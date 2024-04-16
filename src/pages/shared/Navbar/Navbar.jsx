@@ -13,7 +13,7 @@ const Navbar = ({ color, navColor }) => {
     const navLinks = <>
         < NavLink to='/' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Home</NavLink>
         <NavLink to='/update-profile' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Update Profile</NavLink>
-        <NavLink to='/about-us' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>About Us</NavLink>
+        <NavLink to='/contact-us' className={`py-1 px-2 md:px-3 lg:text-lg lg:font-semibold ${navColor}`}>Contact Us</NavLink>
     </>
 
     return (

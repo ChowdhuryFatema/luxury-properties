@@ -7,7 +7,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import ProtectedRoute from "./ProtectedRoute";
-import AboutUs from "../pages/AboutUs/AboutUs";
+import Contact from "../pages/ContactUs/Contact";
 
 const router = createBrowserRouter([
     {
@@ -42,9 +42,9 @@ const router = createBrowserRouter([
           </ProtectedRoute>,
         },
         {
-          path: '/about-us',
+          path: '/contact-us',
           element: <ProtectedRoute>
-            <AboutUs></AboutUs>
+            <Contact></Contact>
             </ProtectedRoute>,
         },
       ],

@@ -12,7 +12,7 @@ const Footer = () => {
                 <ul className="text-center">
                     <Link to='/' className="inline px-3 text-white border-r">Home</Link>
                     <Link to='/update-profile' className="inline px-3 text-white border-r">Update Profile</Link>
-                    <Link to='/about-us' className="inline px-3 text-white border-r">About Us</Link>
+                    <Link to='/contact-us' className="inline px-3 text-white border-r">Contact Us</Link>
                     <li className="inline px-3 text-white">Blog</li>
                 </ul>
                 <div className="flex text-white justify-center gap-3">

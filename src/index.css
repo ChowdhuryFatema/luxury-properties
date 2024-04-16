@@ -57,22 +57,44 @@ html,
 body {
   position: relative;
   height: 100%;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
+  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+}
+
+
 .overlay {
   content: '';
   background-color: black;
-  width: 55%;
-  height: 55%;
+  width: 70%;
+  height: 70%;
+  max-width: 1280px;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -4,8 +4,8 @@ import Navbar from "../shared/Navbar/Navbar";
 import Banner from "./Banner/Banner";
 import Residential from "./Residential/Residential";
 import { useLoaderData } from "react-router-dom";
-import Contact from "./ContactUs/Contact";
 import Property from "./Property/Property";
+import AboutUs from "./AboutUs/AboutUs";
 
 
 
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
             <Residential data={data}></Residential>
             <Property></Property>
-            <Contact></Contact>
+            <AboutUs></AboutUs>
 
         </div>
     );

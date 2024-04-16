@@ -14,6 +14,8 @@ const AuthProvider = ({children}) => {
     // social auth providers 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
+    githubProvider.addScope('read:user');
+    githubProvider.addScope('user:email');
 
     // create user 
     const createUser = (email, password) => {
