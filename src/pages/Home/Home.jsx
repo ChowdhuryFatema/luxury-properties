@@ -18,7 +18,8 @@ const Home = () => {
             <Helmet>
                 <title>Home | Luxury Properties</title>
             </Helmet>
-            <Navbar color={'text-white'}></Navbar>
+            <Navbar color={'text-white'} navColor={'lg:text-white'}></Navbar>
+            
             <div className="-mt-20">
                 <Banner></Banner>
             </div>

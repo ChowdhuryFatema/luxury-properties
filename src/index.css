@@ -150,10 +150,17 @@ body {
   font-size: 15px !important;
   
 }
-.swiper-button-prev {
-  left: 95% !important;
-  top: 38% !important;
+.swiper-button-prev, .swiper-button-next {
+  left: 5% !important;
 }
+.swiper-button-prev {
+  top: 45% !important;
+}
+.swiper-button-next {
+  top: 60% !important;
+}
+
+
 
 .autoplay-progress {
   position: absolute;
@@ -186,3 +193,29 @@ body {
 }
 
 
+@media screen and (max-width: 960px) {
+  .overlay {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .overlay {
+    width: 80%;
+  }
+  .swiper-button-prev {
+    top: 90% !important;
+    left: 38% !important;
+  }
+  .swiper-button-next {
+    top: 90% !important;
+    left: 55% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .overlay {
+    width: 95%;
+    height: 60%;
+  }
+}

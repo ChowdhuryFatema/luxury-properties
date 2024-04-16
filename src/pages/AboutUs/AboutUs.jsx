@@ -7,13 +7,17 @@ const AboutUs = () => {
             <Helmet>
                 <title>About Us | Luxury Properties</title>
             </Helmet>
-            <Navbar></Navbar>
+            <div className="shadow-lg bg-white w-full">
+                <div className="max-w-7xl mx-auto px-5">
+                    <Navbar></Navbar>
+                </div>
+            </div>
             <div className="my-8 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container flex flex-col items-center mx-auto  my-5 md:my-8">
                     <h1 className="text-3xl md:text-4xl font-semibold leading-none text-center">About Us</h1>
                 </div>
                 <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-                    <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+                    <div className="flex flex-col border rounded-lg max-w-sm mx-4 my-6 shadow-lg">
                         <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                             <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -32,7 +36,7 @@ const AboutUs = () => {
                             <p className="text-sm uppercase">Real Estate Investor</p>
                         </div>
                     </div>
-                    < div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+                    < div className="flex flex-col border rounded-lg max-w-sm mx-4 my-6 shadow-lg">
                         <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                             <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -51,7 +55,7 @@ const AboutUs = () => {
                             <p className="text-sm uppercase">Property Manager</p>
                         </div>
                     </div>
-                    <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+                    <div className="flex flex-col border rounded-lg max-w-sm mx-4 my-6 shadow-lg">
                         <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                             <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -71,7 +75,7 @@ const AboutUs = () => {
                             <p className="text-sm uppercase">Home Inspector</p>
                         </div>
                     </div>
-                    <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+                    <div className="flex flex-col border rounded-lg max-w-sm mx-4 my-6 shadow-lg">
                         <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                             <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
