@@ -10,11 +10,11 @@
 5. Users can change their profile.
 
 ## Added npm package:
--firebase
--AOS Animation 
--React Hook form
--Swiper slider
--react-helmet-async
--react-toastify
--prop-types
--react-router-dom
+- firebase
+- AOS Animation 
+- React Hook form
+- Swiper slider
+- react-helmet-async
+- react-toastify
+- prop-types
+- react-router-dom
