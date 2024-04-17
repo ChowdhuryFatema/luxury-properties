@@ -55,7 +55,7 @@ const UpdateProfile = () => {
 
                                 <p data-aos="fade-up" data-aos-delay="700"><span className="font-bold text-sm md:text-xl text-[#23BE0A]">Email:</span> {user?.email && user.email}</p>
 
-                                <p data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg overflow-hidden text-[#23BE0A]">Photo URL:</span> {user?.photoURL || ''}</p>
+                                <p className="overflow-hidden" data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg text-[#23BE0A]">Photo URL:</span> {user?.photoURL || ''}</p>
                             </div>
                         </div>
                     </div>

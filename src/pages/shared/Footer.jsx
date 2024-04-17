@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-[#5C963C] py-3">
-                <p className="text-white opacity-75 text-center">Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+                <p className="text-white opacity-75 text-center">Copyright © 2024 - All right reserved by Luxury Properties</p>
             </div>
         </div>
     );
