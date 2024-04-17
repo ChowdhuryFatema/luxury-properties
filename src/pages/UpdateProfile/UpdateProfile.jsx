@@ -24,10 +24,8 @@ const UpdateProfile = () => {
 
     
     const handleUpdateProfile = (data) => {
-        console.log(data)
 
         const { name, image } = data;
-
 
         updateUserProfile(name, image)
         

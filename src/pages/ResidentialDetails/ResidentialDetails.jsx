@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
 import { Helmet } from "react-helmet-async";
 import SideBar from "./SideBar";
+import MyMap from "./MyMap";
 
 const ResidentialDetails = () => {
 
@@ -84,6 +85,7 @@ const ResidentialDetails = () => {
                             </div>
                         </div>
                     </div>
+                    <MyMap></MyMap>
                 </div>
 
 
