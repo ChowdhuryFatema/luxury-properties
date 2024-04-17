@@ -3,6 +3,7 @@ import Navbar from "../shared/Navbar/Navbar";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form"
 import { Helmet } from "react-helmet-async";
+import userImg from '../../assets/user.png';
 
 
 const UpdateProfile = () => {
@@ -46,7 +47,7 @@ const UpdateProfile = () => {
                 <div className="flex flex-col md:flex-row justify-center item-center my-10 lg:my-20 gap-5">
 
                     <div className="flex flex-col flex-1  justify-center p-6 shadow-md rounded-xl border sm:px-12 dark:bg-gray-50 dark:text-gray-800">
-                        <img data-aos="zoom-in" data-aos-duration="500" src={user?.photoURL} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                        <img data-aos="zoom-in" data-aos-duration="500" src={user?.photoURL || userImg} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
                         <div className="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div className="my-2 space-y-2 overflow-hidden">
                             
@@ -54,7 +55,7 @@ const UpdateProfile = () => {
 
                                 <p data-aos="fade-up" data-aos-delay="700"><span className="font-bold text-sm md:text-xl">Email:</span> {user?.email && user.email}</p>
 
-                                <p data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg">Photo URL:</span> {user.photoURL}</p>
+                                <p data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg">Photo URL:</span> {user?.photoURL || ''}</p>
                             </div>
                         </div>
                     </div>
