@@ -46,7 +46,7 @@ const Navbar = ({ color, navColor }) => {
                         user
                             ?
                             <>
-                                <div className='tooltip tooltip-left' data-tip={user?.displayName && user?.displayName}>
+                                <div className='tooltip tooltip-bottom' data-tip={user?.displayName && user?.displayName}>
                                     <div tabIndex={0} role="button" className="btn user-img btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
                                             <img alt="Tailwind CSS Navbar component" src={user?.photoURL || userImg} />

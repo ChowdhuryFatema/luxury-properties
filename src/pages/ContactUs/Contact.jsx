@@ -35,7 +35,7 @@ const Contact = () => {
                 </form>
                 <div className="order-1 md:order-2 flex flex-col justify-between">
                     <div className="space-y-2">
-                        <h2 className="text-4xl font-bold leading-tight lg:text-5xl text-center">Get in touch</h2>
+                        <h2 data-aos="fade-down" data-aos-duration="1000" className="text-4xl font-bold leading-tight lg:text-5xl text-center">Get in touch</h2>
                     </div>
                     <img src='https://cdn.dribbble.com/users/1602563/screenshots/8869646/media/ddc33ce2c8e2570c410123f375e2c35c.gif' />
                 </div>

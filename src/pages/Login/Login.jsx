@@ -62,7 +62,7 @@ const Login = () => {
             </div>
             <div className="flex login flex-col justify-center items-center pb-10 pt-32 md:pb-20 md:pt-40 -mt-20 px-5">
                 <div className="form w-full max-w-lg p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800 text-white">
-                    <div className="z-50">
+                    < div className="z-50">
                         <h2 data-aos="fade-down" data-aos-duration="1000" className="mb-3 text-2xl md:text-3xl font-semibold text-center">Login to your account</h2>
                         <p className="text-sm text-center dark:text-gray-600">Dont have account?
                             <Link to='/register' href="#" rel="noopener noreferrer" className="focus:underline hover:underline text-blue-600"> Sign up here</Link>

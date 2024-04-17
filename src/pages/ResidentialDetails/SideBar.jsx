@@ -21,7 +21,7 @@ const SideBar = () => {
 
 
                 <div className="mr-auto flex justify-end">
-                    <button type="submit" className="p-2 font-semibold bg-[#23BE0A] text-white">Sign Up</button>
+                    <button type="submit" className="p-2 font-semibold bg-[#23BE0A] text-white">SEARCH</button>
                 </div>
 
                 <div className="bg-white p-5 rounded-md space-y-2">

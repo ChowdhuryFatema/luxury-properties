@@ -32,7 +32,7 @@ const Property = () => {
 						</div>
 					</div>
 
-					<div data-aos="zoom-in" data-aos-duration="1000"  className='property relative'>
+					<div data-aos="zoom-in" data-aos-duration="1000" className='property relative'>
 					<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src={img3} />
 					<div className='overlay3'></div>
 						<div className='absolute top-1/2 left-2/4 z-50 -translate-x-1/2 -translate-y-1/2 space-y-2'>

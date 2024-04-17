@@ -46,15 +46,15 @@ const UpdateProfile = () => {
                 <div className="flex flex-col md:flex-row justify-center item-center my-10 lg:my-20 gap-5">
 
                     <div className="flex flex-col flex-1  justify-center p-6 shadow-md rounded-xl border sm:px-12 dark:bg-gray-50 dark:text-gray-800">
-                        <img src={user?.photoURL} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                        <img data-aos="zoom-in" data-aos-duration="500" src={user?.photoURL} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
                         <div className="space-y-4 text-center divide-y dark:divide-gray-300">
-                            <div className="my-2 space-y-2">
+                            <div className="my-2 space-y-2 overflow-hidden">
                             
-                                <h2 className="text-sm md:text-lg lg:text-xl font-semibold"><span className="font-bold">Name:</span> {user?.displayName && user?.displayName}</h2>
+                                <h2 data-aos="fade-up" data-aos-delay="600" className="text-sm md:text-lg lg:text-xl font-semibold"><span className="font-bold">Name:</span> {user?.displayName && user?.displayName}</h2>
 
-                                <p><span className="font-bold text-sm md:text-xl">Email:</span> {user?.email && user.email}</p>
+                                <p data-aos="fade-up" data-aos-delay="700"><span className="font-bold text-sm md:text-xl">Email:</span> {user?.email && user.email}</p>
 
-                                <p><span className="font-bold text-sm md:text-lg">Photo URL:</span> {user.photoURL}</p>
+                                <p data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg">Photo URL:</span> {user.photoURL}</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const UpdateProfile = () => {
                     <div className="flex-1 md:w-1/2 rounded-lg flex flex-col justify-center items-center">
                         <div className="flex flex-col w-full max-w-lg p-6 shadow rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800 border">
                             <div className="mb-4 md:mb-8 text-center">
-                                <h1 className="my-3 text-2xl md:text-4xl font-bold">Update Profile</h1>
+                                <h1 data-aos="fade-down" data-aos-duration="1000" className="my-3 text-2xl md:text-4xl font-bold">Update Profile</h1>
                                 <hr className="w-2/3 mx-auto" />
                             </div>
                             <form onSubmit={handleSubmit(handleUpdateProfile)} className="space-y-8">

@@ -73,7 +73,7 @@ const Register = () => {
             <div className="register rounded-lg flex flex-col justify-center items-center -mt-20 pt-32 pb-10 md:pt-40 md:b-20 px-5">
                 <div className="form text-white flex flex-col w-full max-w-lg p-6 shadow rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
                     <div className="mb-4 md:mb-8 text-center">
-                        <h1 className="my-3 text-2xl md:text-4xl font-bold">Sign Up</h1>
+                        <h1 data-aos="fade-down" data-aos-duration="1000" className="my-3 text-2xl md:text-4xl font-bold">Sign Up</h1>
                         <p className="text-sm dark:text-gray-600">Nice to meet you! Enter your details to register.</p>
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
