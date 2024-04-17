@@ -1,8 +1,20 @@
-# React + Vite
+# Website Name: Luxury Properties 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Website Live Link: https://luxury-properties-ccb9d.web.app/
 
-Currently, two official plugins are available:
+## Features:
+1. It is a luxury property website. It offers choice apartments for sale and rent.
+2. You can login with email and password or with Gmail and Github.
+3. If you are not logged in you will not be able to see all our services.So log in and receive the service.
+4. After creating the account, the user can view his profile.
+5. Users can change their profile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Added npm package:
+-firebase
+-AOS Animation 
+-React Hook form
+-Swiper slider
+-react-helmet-async
+-react-toastify
+-prop-types
+-react-router-dom
