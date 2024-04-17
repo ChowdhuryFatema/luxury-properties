@@ -45,15 +45,18 @@ const UpdateProfile = () => {
                 <div className="flex flex-col md:flex-row justify-center item-center my-10 lg:my-20 gap-5">
 
                     <div className="flex flex-col flex-1  justify-center p-5 shadow-md rounded-xl border">
-                        <img data-aos="zoom-in" data-aos-duration="500" src={user?.photoURL || userImg} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                    <h1 data-aos="fade-down" data-aos-duration="1000" className="my-3 text-2xl text-center md:text-4xl font-bold text-[#23BE0A] mb-5">Your Profile</h1>
+                    <hr className="w-1/2 mx-auto"/>
+                        
+                        <img data-aos="zoom-in" data-aos-duration="500" src={user?.photoURL || userImg} alt="" className="mt-5 w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square border-4 p-1 border-[#23BE0A]" />
                         <div className="space-y-4 text-center divide-y dark:divide-gray-300">
                             <div className="my-2 space-y-2 overflow-hidden md:px-10">
                             
                                 <h2 data-aos="fade-up" data-aos-delay="600" className="text-sm md:text-lg lg:text-xl font-semibold"><span className="font-bold text-[#23BE0A]">Name:</span> {user?.displayName && user?.displayName}</h2>
 
-                                <p data-aos="fade-up" data-aos-delay="700"><span className="font-bold text-sm md:text-xl text-[#23BE0A]">Email:</span> {user?.email && user.email}</p>
+                                <p data-aos="fade-up" data-aos-delay="700"><span className="font-bold text-sm md:text-xl text-[#23BE0A]">Email:</span> {user?.email && user.email || 'Email Not Found'}</p>
 
-                                <p className="overflow-hidden" data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg text-[#23BE0A]">Photo URL:</span> {user?.photoURL || ''}</p>
+                                <p className="overflow-hidden" data-aos="fade-up" data-aos-delay="800"><span className="font-bold text-sm md:text-lg text-[#23BE0A]">Photo URL:</span> {user?.photoURL || 'Photo URL Not Found'}</p>
                             </div>
                         </div>
                     </div>

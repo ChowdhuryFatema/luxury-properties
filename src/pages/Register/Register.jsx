@@ -6,14 +6,14 @@ import { toast } from 'react-toastify';
 import { useForm } from "react-hook-form"
 import { LuEye, LuEyeOff } from "react-icons/lu";
 import { Helmet } from "react-helmet-async";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 
 const Register = () => {
 
-    const { createUser, updateUserProfile } = useContext(AuthContext);
+    const { createUser, updateUserProfile, logOut } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false)
-    const location = useLocation()
+    // const location = useLocation()
     const navigate = useNavigate();
     
 
@@ -42,21 +42,14 @@ const Register = () => {
             .then(result => { 
                 toast.success('User Create Successfully');
                 console.log(result)
-                if (result.user) {
-                    navigate(location?.state || '/')
-                }
+                logOut()
+                navigate('/login')
 
                 updateUserProfile(name, image)
-
-                // setUser({
-                //     displayName: name, 
-                //     photoURL: image,
-                //     email: email,
-                //   })
+                
 
             })
             .catch(error => toast.error(error.message))
-
 
     }
 
