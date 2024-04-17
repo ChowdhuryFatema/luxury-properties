@@ -12,6 +12,6 @@
 
 ## Added npm package:
 
-- AOS Animation 
+- AOS Package 
 - React Hook form
 - Swiper slider

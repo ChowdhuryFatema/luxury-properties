@@ -71,7 +71,8 @@ const AboutUs = () => {
                                         </svg>
                                     </p>
                                 </div>
-                                <div className="flex flex-col items-center justify-center bg-[#22be0a50] p-8 rounded-b-lg">
+                                <div className="flex flex-col items-center justify-center p-8 rounded-b-lg 
+                                bg-[#5C963C] text-white">
                                     <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
                                     <p className="text-xl font-semibold leading-tight">Lily Rose</p>
                                     <p className="text-sm uppercase">Real Estate Investor</p>
@@ -95,7 +96,7 @@ const AboutUs = () => {
                                         </svg>
                                     </p>
                                 </div>
-                                <div className="flex flex-col items-center justify-center bg-[#22be0a50] p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
+                                <div className="flex flex-col items-center justify-center bg-[#5C963C] text-white p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
                                     <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
                                     <p className="text-xl font-semibold leading-tight">Jordan</p>
                                     <p className="text-sm uppercase">Mortgage Broker</p>
@@ -117,7 +118,7 @@ const AboutUs = () => {
                                         </svg>
                                     </p>
                                 </div>
-                                <div className="flex flex-col items-center justify-center bg-[#22be0a50] p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
+                                <div className="flex flex-col items-center justify-center bg-[#5C963C] text-white p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
                                     <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
                                     <p className="text-xl font-semibold leading-tight">Jack Ryan</p>
                                     <p className="text-sm uppercase">Property Manager</p>
@@ -140,7 +141,7 @@ const AboutUs = () => {
                                         </svg>
                                     </p>
                                 </div>
-                                <div className="flex flex-col items-center justify-center bg-[#22be0a50] p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
+                                <div className="flex flex-col items-center justify-center bg-[#5C963C] text-white p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
                                     <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
                                     <p className="text-xl font-semibold leading-tight">Emma Grace</p>
                                     <p className="text-sm uppercase">Home Inspector</p>
@@ -163,7 +164,7 @@ const AboutUs = () => {
                                         </svg>
                                     </p>
                                 </div>
-                                <div className="flex flex-col items-center justify-center bg-[#22be0a50] p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
+                                <div className="flex flex-col items-center justify-center bg-[#5C963C] text-white p-8 rounded-b-lg dark:bg-violet-600 dark:text-gray-50">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NThQQ3QZ2fqde8ww_c0EbKAAF_Pflfjf2cmp_bi4DrrgB2yQOtWMZlXz8IoXlDJHDUI&usqp=CAU" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full" />
                                     <p className="text-xl font-semibold leading-tight">Lucas James</p>
                                     <p className="text-sm uppercase">Real Estate Lawyer</p>
